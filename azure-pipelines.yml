@@ -10,9 +10,13 @@ pool:
   vmImage: 'macos-11'
 
 steps:
-- task: CocoaPods@0
+- task: CmdLine@2
   inputs:
-    forceRepoUpdate: false
+    script: |
+      pod deintegrate
+      pod install --verbose
+
+    
 - task: CmdLine@2
   inputs:
     script: |
