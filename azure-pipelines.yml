@@ -13,6 +13,11 @@ steps:
 - task: CocoaPods@0
   inputs:
     forceRepoUpdate: false
+- task: CmdLine@2
+  inputs:
+    script: |
+      cd Pods
+      ls
 - task: Xcode@5
   inputs:
     actions: 'build'
