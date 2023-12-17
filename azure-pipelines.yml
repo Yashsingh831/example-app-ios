@@ -30,4 +30,5 @@ steps:
     sdk: 'iphoneos'
     xcWorkspacePath: 'ios-app-particle-setup.xcworkspace'
     scheme: 'ios-app-particle-setup'
-    packageApp: false
+    packageApp: true
+    publishJUnitResults: true
