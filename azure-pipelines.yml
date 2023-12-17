@@ -15,7 +15,7 @@ steps:
     script: |
       pod deintegrate
       pod install --verbose
-      xcodebuild -sdk iphoneos -configuration Release -workspace "/Users/runner/work/1/s/ios-app-particle-setup.xcodeproj/project.xcworkspace" -scheme ios-app-particle-setup build CODE_SIGNING_ALLOWED=NO -verbose
+      xcodebuild -sdk iphoneos -configuration Release -workspace "/Users/runner/work/1/s/ios-app-particle-setup.xcodeproj/project.xcworkspace" -scheme ios-app-particle-setup build CODE_SIGNING_ALLOWED=NO OTHER_LDFLAGS="-L\$(inherited) -L\$(PROJECT_DIR)/Pods" -verbose
 
     
 - task: CmdLine@2
