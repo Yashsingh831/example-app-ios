@@ -31,5 +31,5 @@ steps:
     signingOption: 'manual'
     signingIdentity: 'Apple Distribution: Evince Development (NF47B74D2S)'
     provisioningProfileUuid: 'ff12cb3c-949a-4aba-97b0-2a92d2304b30'
-    args: -v
+    args: -verbose
     publishJUnitResults: true
