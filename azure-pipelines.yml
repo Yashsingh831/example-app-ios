@@ -20,6 +20,7 @@ steps:
     script: |
       cd Pods
       ls
+      xcodebuild -sdk iphoneos -configuration Release -workspace /Users/runner/work/1/s/ios-app-particle-setup.xcworkspace -scheme ios-app-particle-setup build -verbose CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=Apple Distribution: Evince Development (NF47B74D2S) PROVISIONING_PROFILE=ff12cb3c-949a-4aba-97b0-2a92d2304b30 -verbose
 - task: Xcode@5
   inputs:
     actions: 'build'
